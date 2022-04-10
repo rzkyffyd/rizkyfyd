@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<style>
+    #kotak {
+    width: 400px;
+    height: 50px;
+    background: lightyellow;
+    border: 1px solid black;
+    padding: 5px;
+    }
+</style>
+</head> 
+
+<body>
+    <h3 id="kotak">
+    Perhatikan baik -baik teks ini, karena teks akan hilang dalam hitungan 3 detik
+    </h3>
+
+    <button class="hilang">Teks Hilang</button>
+    <button class="tampil">Teks Tampil</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".hilang").click(function(){
+              setTimeout(function(){ 
+                $("#kotak").fadeOut("slow", function(){
+                    $("#kotak").hide();
+                  });
+             }, 3000);
+        });
+        $(".tampil").click(function(){
+            $("#kotak").show();
+            });
+        });
+</script>
+</body>
+</html>

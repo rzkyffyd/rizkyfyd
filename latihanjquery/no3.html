@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#daftar").addClass("merahhitam"); }); </script>
+
+<style type="text/css">
+
+.merahhitam {
+    color:rgb(249, 249, 249);
+    font-weight: bold; 
+    background-color:black;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+    <div>
+        <p>Paragraf Pertama</p>
+    </div>
+    <div>
+    <ul id="daftar">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<button class="warna">Ganti Warna</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+     $(".warna").click(function(){
+         $("#daftar").toggleClass("merahhitam");
+     });
+    });
+</script>
+</body>
+</html>

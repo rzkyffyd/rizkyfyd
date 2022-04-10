@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<script type="text/javascript"> 
+    $(document).ready(function () {
+    $("div").addClass("purple"); });
+</script>
+
+<style>
+.purple{
+    color: rgb(249, 50, 28);
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div>
+    <p>PARAGRAF PERTAMA</p>
+</div>
+
+<div>
+    <ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+    </ul>
+</div>
+<button class="warna">Ganti Warna</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function(){
+     $(".warna").click(function(){
+         $("div").toggleClass("purple");
+     });
+    });
+</script>
+</body>
+</html>

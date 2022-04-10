@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#daftar").addClass("merahkuning");("hitamputih"); }); </script>
+
+    <style>
+    .merahkuning {
+        color: red;
+        font-weight: bold; 
+        background-color: yellow;
+        padding: 3px;
+    }
+    .hitamputih{
+        color: white;
+        background-color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Paragraf Pertama</p>
+    </div>
+    <div>
+    <ul id="daftar">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li class="subdaftar" > Item C</li>
+    </ul>
+    </div>
+    
+<button class="warna">Ganti Warna</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+     $(".warna").click(function(){
+         $("#daftar").toggleClass("merahkuning");
+            $(".subdaftar").toggleClass("hitamputih");
+        });
+    });
+</script>
+</body>
+</html>
